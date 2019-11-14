@@ -1,0 +1,33 @@
+
+/* Class = "UITabBarItem"; title = "Received"; ObjectID = "1XP-Uw-Eh1"; */
+"1XP-Uw-Eh1.title" = "Received";
+
+/* Class = "UINavigationItem"; title = "Segment"; ObjectID = "48s-Ug-6mG"; */
+"48s-Ug-6mG.title" = "Segment";
+
+/* Class = "UIViewController"; title = "Segment"; ObjectID = "COg-ad-QfG"; */
+"COg-ad-QfG.title" = "Segment";
+
+/* Class = "UIButton"; normalTitle = "受信した通知を表示"; ObjectID = "QJM-j8-cQV"; */
+"QJM-j8-cQV.normalTitle" = "受信した通知を表示";
+
+/* Class = "UISegmentedControl"; SJV-jj-kyv.segmentTitles[0] = "IMAGE"; ObjectID = "SJV-jj-kyv"; */
+"SJV-jj-kyv.segmentTitles[0]" = "IMAGE";
+
+/* Class = "UISegmentedControl"; SJV-jj-kyv.segmentTitles[1] = "GIF"; ObjectID = "SJV-jj-kyv"; */
+"SJV-jj-kyv.segmentTitles[1]" = "GIF";
+
+/* Class = "UISegmentedControl"; SJV-jj-kyv.segmentTitles[2] = "MOVIE"; ObjectID = "SJV-jj-kyv"; */
+"SJV-jj-kyv.segmentTitles[2]" = "MOVIE";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ctp-QO-eE8"; */
+"ctp-QO-eE8.text" = "Label";
+
+/* Class = "UITabBarItem"; title = "Segment"; ObjectID = "cwc-dp-YFW"; */
+"cwc-dp-YFW.title" = "Segment";
+
+/* Class = "UITabBarItem"; title = "Event"; ObjectID = "r5h-cg-WhS"; */
+"r5h-cg-WhS.title" = "Event";
+
+/* Class = "UINavigationItem"; title = "Event"; ObjectID = "xjM-2Q-tTi"; */
+"xjM-2Q-tTi.title" = "Event";
