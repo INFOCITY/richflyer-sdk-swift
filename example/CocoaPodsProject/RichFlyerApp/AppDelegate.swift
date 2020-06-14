@@ -49,7 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
 		//通知を受け取るためにデバイスを登録
-		RFApp.registDevice(deviceToken: deviceToken)
+		RFApp.registDevice(deviceToken: deviceToken, completion: { (result: RFResult) in
+            if (!result.result) {
+                // 失敗
+                print(result.message + "(code:\(result.code))")
+            }
+        })
 		
 		#if DEBUG
 			let token = deviceToken.map{String(format: "%.2hhx", $0)}.joined()
@@ -77,6 +82,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 @available(iOS 10, *)
 extension AppDelegate: RFNotificationDelegate {
+    func dismissedContentDisplay(_ action: RFAction?, content: RFContent?) {
+        if let rfcontent = content {
+            print(rfcontent.notificationId)
+        }
+        
+        if action?.type == "url", let urlStr: String = action?.value {
+            if let url: URL = URL(string: urlStr), (url.scheme == "http" || url.scheme == "https") {
+                UIApplication.shared.open(url, options: [UIApplication.OpenExternalURLOptionsKey.universalLinksOnly: NSNumber.init(booleanLiteral: false)], completionHandler: nil)
+            }
+        }
+    }
+    
 	func willPresentNotification(_ center: UNUserNotificationCenter,
 	                             willPresent notification: UNNotification,
 	                             withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {

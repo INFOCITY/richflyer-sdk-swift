@@ -12,16 +12,26 @@ import UIKit
 import UserNotifications
 import UserNotificationsUI
 import WebKit
+public struct RFResult {
+  public let result: Swift.Bool
+  public let message: Swift.String
+  public let code: Swift.Int
+}
 public class RFApp {
   public static var sandbox: Swift.Bool {
     get
     }
   public static func setServiceKey(serviceKey: Swift.String, appGroupId: Swift.String, sandbox: Swift.Bool)
+  @available(*, deprecated, message: "Use registDevice(deviceToken:completion:) instead")
   public static func registDevice(deviceToken: Foundation.Data)
+  public static func registDevice(deviceToken: Foundation.Data, completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
   public static func setBadgeNumber(application: UIKit.UIApplication, badge: Swift.Int)
   public static func resetBadgeNumber(application: UIKit.UIApplication)
+  @available(*, deprecated, message: "Use registSegments(segments:completion:) instead")
   public static func registSegments(segments: [Swift.String : Swift.String], completion: @escaping (Swift.Bool) -> Swift.Void)
+  public static func registSegments(segments: [Swift.String : Swift.String], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
   public static func getSegments() -> [Swift.String : Swift.String]?
+  public static func setLaunchMode(modes: [RichFlyer.RFContentType]?)
   @objc deinit
 }
 public enum RFAuthorizationOptions {
@@ -144,6 +154,8 @@ public protocol RFNotificationDelegate {
   func willPresentNotification(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @available(iOS 10.0, *)
   func didReceiveNotification(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
+  @available(iOS 10.0, *)
+  func dismissedContentDisplay(_ action: RichFlyer.RFAction?, content: RichFlyer.RFContent?)
 }
 public class RFContentDisplay {
   public init()
