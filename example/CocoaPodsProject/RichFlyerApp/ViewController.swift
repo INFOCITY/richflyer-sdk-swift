@@ -114,15 +114,14 @@ class ViewController: UIViewController {
 	}
 	
 	//MARK: etc method
-	
 	@objc func registerSegment() {
-		RFApp.registSegments(segments: model.dictionary, completion: { (result: Bool) in
+		RFApp.registSegments(segments: model.dictionary, completion: { (result: RFResult) in
 			DispatchQueue.main.async {
 				var message = ""
-				if result {
+                if result.result {
 					message = "「\(self.model.getValue())」でSegmentを登録しました。"
 				} else {
-					message = "Segment登録できませんでした。"
+					message = result.message + "(code:\(result.code))"
 				}
 				
 				let alert:UIAlertController = UIAlertController(title:"Segmentの登録",

@@ -213,7 +213,9 @@ SWIFT_CLASS("_TtC9RichFlyer19AppInternalDelegate")
 @interface AppInternalDelegate : NSObject
 - (void)appWillResignActiveWithNotification:(NSNotification * _Nonnull)notification;
 - (void)appWillTerminateWithNotificatoin:(NSNotification * _Nonnull)notificatoin;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)appDidBecomeActiveWithNotificatoin:(NSNotification * _Nonnull)notificatoin;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -260,10 +262,10 @@ SWIFT_CLASS("_TtC9RichFlyer9RFGifView") SWIFT_AVAILABILITY(ios,introduced=10.0)
 SWIFT_CLASS("_TtC9RichFlyer11RFImageView") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface RFImageView : UIImageView
 - (void)layoutSubviews;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=10.0);
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 @end
 
 
@@ -605,7 +607,9 @@ SWIFT_CLASS("_TtC9RichFlyer19AppInternalDelegate")
 @interface AppInternalDelegate : NSObject
 - (void)appWillResignActiveWithNotification:(NSNotification * _Nonnull)notification;
 - (void)appWillTerminateWithNotificatoin:(NSNotification * _Nonnull)notificatoin;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+- (void)appDidBecomeActiveWithNotificatoin:(NSNotification * _Nonnull)notificatoin;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 
@@ -652,10 +656,10 @@ SWIFT_CLASS("_TtC9RichFlyer9RFGifView") SWIFT_AVAILABILITY(ios,introduced=10.0)
 SWIFT_CLASS("_TtC9RichFlyer11RFImageView") SWIFT_AVAILABILITY(ios,introduced=10.0)
 @interface RFImageView : UIImageView
 - (void)layoutSubviews;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=10.0);
-- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image highlightedImage:(UIImage * _Nullable)highlightedImage OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithImage:(UIImage * _Nullable)image SWIFT_UNAVAILABLE;
 @end
 
 
