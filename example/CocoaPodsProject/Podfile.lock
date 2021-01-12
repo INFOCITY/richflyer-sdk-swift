@@ -1,10 +1,10 @@
 PODS:
-  - SwiftRichFlyer (3.2.3)
-  - SwiftRichFlyerEvent (3.1.5)
+  - SwiftRichFlyer (3.2.5)
+  - SwiftRichFlyerEvent (3.1.6)
 
 DEPENDENCIES:
-  - SwiftRichFlyer (= 3.2.3)
-  - SwiftRichFlyerEvent (= 3.1.5)
+  - SwiftRichFlyer (= 3.2.5)
+  - SwiftRichFlyerEvent (= 3.1.6)
 
 SPEC REPOS:
   https://github.com/INFOCITY/richflyer-specs.git:
