@@ -1,9 +1,9 @@
 PODS:
-  - SwiftRichFlyer (3.2.5)
+  - SwiftRichFlyer (3.2.6)
   - SwiftRichFlyerEvent (3.1.6)
 
 DEPENDENCIES:
-  - SwiftRichFlyer (= 3.2.5)
+  - SwiftRichFlyer (= 3.2.6)
   - SwiftRichFlyerEvent (= 3.1.6)
 
 SPEC REPOS:
@@ -12,9 +12,9 @@ SPEC REPOS:
     - SwiftRichFlyerEvent
 
 SPEC CHECKSUMS:
-  SwiftRichFlyer: 3fb4273bb9b74e25a43a24bdc89eb4d8c1f25f69
+  SwiftRichFlyer: a54e95655c49f139bd35e93c1d639c1e501640ee
   SwiftRichFlyerEvent: 71bf84828c538088b76a119245127a44adb3abee
 
-PODFILE CHECKSUM: f9ede3e655015de57332d74f08b0e2780a3e8385
+PODFILE CHECKSUM: c73724dede108ab81dbded6781e580f5f40d236b
 
 COCOAPODS: 1.8.4
