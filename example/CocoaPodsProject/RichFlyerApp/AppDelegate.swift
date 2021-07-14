@@ -9,7 +9,6 @@ import UIKit
 import UserNotifications
 
 import RichFlyer
-import RichFlyerEvent
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

@@ -1,11 +1,1 @@
-# For Swift Compiler 4.2.1(Xcode10.1)
-#github "INFOCITY/richflyer-sdk-swift" ~> 1.0
-#github "INFOCITY/richflyer-event-sdk-swift" ~> 1.0
-
-# For Swift Compiler 5.0.1(Xcode10.2.1)
-#github "INFOCITY/richflyer-sdk-swift" ~> 2.0
-#github "INFOCITY/richflyer-event-sdk-swift" ~> 2.0
-
-# For Swift Module Stability Frameworks(Xcode11.0~)
 github "INFOCITY/richflyer-sdk-swift" ~> 3.0
-github "INFOCITY/richflyer-event-sdk-swift" ~> 3.0

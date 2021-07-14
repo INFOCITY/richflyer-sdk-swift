@@ -12,7 +12,6 @@
 		C281CA72221D2CD3003362FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA71221D2CD3003362FE /* ViewController.swift */; };
 		C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281CA76221D2CD4003362FE /* Assets.xcassets */; };
 		C281CA7A221D2CD4003362FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CA78221D2CD4003362FE /* LaunchScreen.storyboard */; };
-		C281CA84221D2F92003362FE /* RichFlyerEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA82221D2F92003362FE /* RichFlyerEvent.framework */; };
 		C281CA85221D2F92003362FE /* RichFlyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA83221D2F92003362FE /* RichFlyer.framework */; };
 		C281CA9A221D5530003362FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CA8A221D552F003362FE /* Main.storyboard */; };
 		C281CA9B221D5530003362FE /* InputParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA8C221D552F003362FE /* InputParameterView.swift */; };
@@ -27,9 +26,7 @@
 		C298C5EF221F9C2F00E1A906 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298C5EE221F9C2F00E1A906 /* NotificationService.swift */; };
 		C298C5F3221F9C2F00E1A906 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C298C5EC221F9C2F00E1A906 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C298C5F8221F9D5900E1A906 /* RichFlyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA83221D2F92003362FE /* RichFlyer.framework */; };
-		C298C5F9221F9D5900E1A906 /* RichFlyerEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA82221D2F92003362FE /* RichFlyerEvent.framework */; };
 		C298C5FA221F9D6C00E1A906 /* RichFlyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA83221D2F92003362FE /* RichFlyer.framework */; };
-		C298C5FB221F9D6C00E1A906 /* RichFlyerEvent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA82221D2F92003362FE /* RichFlyerEvent.framework */; };
 		C298C5FD221F9EA300E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FC221F9EA200E1A906 /* RichFlyer.plist */; };
 		C298C5FF221FA7EA00E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FE221FA7EA00E1A906 /* RichFlyer.plist */; };
 /* End PBXBuildFile section */
@@ -75,7 +72,6 @@
 		C281CA76221D2CD4003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CA79221D2CD4003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C281CA7B221D2CD4003362FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C281CA82221D2F92003362FE /* RichFlyerEvent.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RichFlyerEvent.framework; path = Carthage/Build/iOS/RichFlyerEvent.framework; sourceTree = "<group>"; };
 		C281CA83221D2F92003362FE /* RichFlyer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RichFlyer.framework; path = Carthage/Build/iOS/RichFlyer.framework; sourceTree = "<group>"; };
 		C281CA89221D552F003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C281CA8B221D552F003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
@@ -107,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C281CA84221D2F92003362FE /* RichFlyerEvent.framework in Frameworks */,
 				C281CA85221D2F92003362FE /* RichFlyer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -117,7 +112,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C298C5F8221F9D5900E1A906 /* RichFlyer.framework in Frameworks */,
-				C298C5F9221F9D5900E1A906 /* RichFlyerEvent.framework in Frameworks */,
 				C298C5D8221F9BF700E1A906 /* UserNotificationsUI.framework in Frameworks */,
 				C298C5D6221F9BF700E1A906 /* UserNotifications.framework in Frameworks */,
 			);
@@ -128,7 +122,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C298C5FA221F9D6C00E1A906 /* RichFlyer.framework in Frameworks */,
-				C298C5FB221F9D6C00E1A906 /* RichFlyerEvent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				C281CA83221D2F92003362FE /* RichFlyer.framework */,
-				C281CA82221D2F92003362FE /* RichFlyerEvent.framework */,
 				C298C5D5221F9BF700E1A906 /* UserNotifications.framework */,
 				C298C5D7221F9BF700E1A906 /* UserNotificationsUI.framework */,
 			);
@@ -390,13 +382,11 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/RichFlyer.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RichFlyerEvent.framework",
 			);
 			outputFileListPaths = (
 			);
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RichFlyer.framework",
-				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/RichFlyerEvent.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

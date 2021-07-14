@@ -7,7 +7,6 @@
 
 import UIKit
 
-import RichFlyerEvent
 import RichFlyer
 
 class ViewController: UIViewController {
