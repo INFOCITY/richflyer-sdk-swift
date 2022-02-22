@@ -18,31 +18,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LVJBCCfmL8iZQfJcZloLHPBtu+0=
+		4M5ZZljfoZJuzB1Zp4sO8KTo2Ps=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		caOLxJFwNO9s2FKJW5MgFvSko6E=
+		uCSngnuagjOJAPhMLoxtBlswYU8=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<data>
-		caOLxJFwNO9s2FKJW5MgFvSko6E=
+		uCSngnuagjOJAPhMLoxtBlswYU8=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		cUW0Q6OyqsnDt3ts4qBlkY2FXck=
+		k4TwhDiwYsXdzl3sBdr4WFt8lko=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<data>
-		cUW0Q6OyqsnDt3ts4qBlkY2FXck=
+		k4TwhDiwYsXdzl3sBdr4WFt8lko=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
-		nhutUa4812Vfo0u7YfBqAwoDS/g=
+		vVh0CMlkQ9W/sV11BscRzDoOpIw=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<data>
-		nhutUa4812Vfo0u7YfBqAwoDS/g=
+		vVh0CMlkQ9W/sV11BscRzDoOpIw=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		MRBVahiHwkLtksqKfAzRPv7yz+A=
+		AplzBycLTXOlKq/xXEeSVrQ0hGI=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FmMQhT+dwq6Bn3yT1/8x0slwNJk=
+		+vWQYyBWYrjzKE42PqWlBXlMxAE=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -62,11 +62,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64.swiftinterface</key>
 		<data>
-		MRBVahiHwkLtksqKfAzRPv7yz+A=
+		AplzBycLTXOlKq/xXEeSVrQ0hGI=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		FmMQhT+dwq6Bn3yT1/8x0slwNJk=
+		+vWQYyBWYrjzKE42PqWlBXlMxAE=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -74,11 +74,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ncjW/DbvlXMbEkuhdQLW5iV2UYI=
+		tmdQ4EO0qCXNJuxEbjIURmu0UI4=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NhQTdO9++kJTDVRp6FfxecUZeLM=
+		Xyz+4ZAVuiJIjgKtkp44OCvV+0E=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386.swiftdoc</key>
 		<data>
@@ -86,11 +86,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386.swiftinterface</key>
 		<data>
-		ncjW/DbvlXMbEkuhdQLW5iV2UYI=
+		tmdQ4EO0qCXNJuxEbjIURmu0UI4=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/i386.swiftmodule</key>
 		<data>
-		NhQTdO9++kJTDVRp6FfxecUZeLM=
+		Xyz+4ZAVuiJIjgKtkp44OCvV+0E=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -98,11 +98,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		G2lvol3zSim0L7m6cgLVstRXpUY=
+		kxAeVc2pyok/VpYb6OHj++cOecA=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IG3OrRCjF+llE8ZpUHSFfjPBUdM=
+		GSRZrUH/gK+SlI4dpdW/T/CoUuc=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -110,11 +110,11 @@
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64.swiftinterface</key>
 		<data>
-		G2lvol3zSim0L7m6cgLVstRXpUY=
+		kxAeVc2pyok/VpYb6OHj++cOecA=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		IG3OrRCjF+llE8ZpUHSFfjPBUdM=
+		GSRZrUH/gK+SlI4dpdW/T/CoUuc=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -124,7 +124,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zw2yHFkmDC3/KHO42I7F0zCz5Rc=
+			ChzZeGkFJS1TdEbBSBgRzvBhVUM=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jwghs0NtwfnMhRWTLguekEMgYYQ=
+			Xga1ICChpahkC1HngkcXAI91DmI=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -178,66 +178,66 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			caOLxJFwNO9s2FKJW5MgFvSko6E=
+			uCSngnuagjOJAPhMLoxtBlswYU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TEv3JUomwW/k7V6MxIWbzWKvzw0IOTzTjEXOkm9Sh4o=
+			6k7t/mlW/i5fjmBqAknJS5HJdUlK9vfMkbGIpXeEhuw=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/Project/arm64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			caOLxJFwNO9s2FKJW5MgFvSko6E=
+			uCSngnuagjOJAPhMLoxtBlswYU8=
 			</data>
 			<key>hash2</key>
 			<data>
-			TEv3JUomwW/k7V6MxIWbzWKvzw0IOTzTjEXOkm9Sh4o=
+			6k7t/mlW/i5fjmBqAknJS5HJdUlK9vfMkbGIpXeEhuw=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/Project/i386-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cUW0Q6OyqsnDt3ts4qBlkY2FXck=
+			k4TwhDiwYsXdzl3sBdr4WFt8lko=
 			</data>
 			<key>hash2</key>
 			<data>
-			nxS16iy1/MM9MGdsnVIO+rFRFI2wTwCQTQVzMK8h4bU=
+			9MQt/ao25dpMReV16KSJir6QgxY8XSuzGg/L/n3EQZg=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/Project/i386.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cUW0Q6OyqsnDt3ts4qBlkY2FXck=
+			k4TwhDiwYsXdzl3sBdr4WFt8lko=
 			</data>
 			<key>hash2</key>
 			<data>
-			nxS16iy1/MM9MGdsnVIO+rFRFI2wTwCQTQVzMK8h4bU=
+			9MQt/ao25dpMReV16KSJir6QgxY8XSuzGg/L/n3EQZg=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/Project/x86_64-apple-ios-simulator.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nhutUa4812Vfo0u7YfBqAwoDS/g=
+			vVh0CMlkQ9W/sV11BscRzDoOpIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			03xNKnocPKRrDWyNpsHtJdRkp9gTpIHJ289oHyABAEU=
+			NnWdzq0J1dhvnD7QuRN3YbB/NVgAFJ1Ml1t4Aaqos9U=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/Project/x86_64.swiftsourceinfo</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			nhutUa4812Vfo0u7YfBqAwoDS/g=
+			vVh0CMlkQ9W/sV11BscRzDoOpIw=
 			</data>
 			<key>hash2</key>
 			<data>
-			03xNKnocPKRrDWyNpsHtJdRkp9gTpIHJ289oHyABAEU=
+			NnWdzq0J1dhvnD7QuRN3YbB/NVgAFJ1Ml1t4Aaqos9U=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -255,22 +255,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MRBVahiHwkLtksqKfAzRPv7yz+A=
+			AplzBycLTXOlKq/xXEeSVrQ0hGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZdDSorUVIqXhaf8dk1Q6Yd9Ky1kJya7jaENXXoXiFAQ=
+			nGHnFBqc3oxyiACPe93cxBFLhhmrZD3Zf5w3axRmJBw=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FmMQhT+dwq6Bn3yT1/8x0slwNJk=
+			+vWQYyBWYrjzKE42PqWlBXlMxAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			NvYtrM4j8ETAU3+jO8oWIEvbCry3dvbhR9bJN9x+Fo8=
+			wul0cs+8MEVApIT4CFUgQLg98PHPhlM7vn9fqGPd6F0=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/arm64.swiftdoc</key>
@@ -288,22 +288,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			MRBVahiHwkLtksqKfAzRPv7yz+A=
+			AplzBycLTXOlKq/xXEeSVrQ0hGI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZdDSorUVIqXhaf8dk1Q6Yd9Ky1kJya7jaENXXoXiFAQ=
+			nGHnFBqc3oxyiACPe93cxBFLhhmrZD3Zf5w3axRmJBw=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/arm64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FmMQhT+dwq6Bn3yT1/8x0slwNJk=
+			+vWQYyBWYrjzKE42PqWlBXlMxAE=
 			</data>
 			<key>hash2</key>
 			<data>
-			NvYtrM4j8ETAU3+jO8oWIEvbCry3dvbhR9bJN9x+Fo8=
+			wul0cs+8MEVApIT4CFUgQLg98PHPhlM7vn9fqGPd6F0=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/i386-apple-ios-simulator.swiftdoc</key>
@@ -321,22 +321,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncjW/DbvlXMbEkuhdQLW5iV2UYI=
+			tmdQ4EO0qCXNJuxEbjIURmu0UI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			DPte5SWq9Exz0hd8zdGElIQZigC/du/j+6sNiamEzmk=
+			gUOJYsiivVBQpjRuG45x05aCTM/ZSgWfDuXhgLxOrXE=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/i386-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NhQTdO9++kJTDVRp6FfxecUZeLM=
+			Xyz+4ZAVuiJIjgKtkp44OCvV+0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			kuoCRE8MdR3OyFFKs4qsIwpTVNokiQzM3GDAiC2vecg=
+			HJgtouGI4ypWj8Awf/Z9XDrezXO+SLlnDjcOYlwoyeo=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/i386.swiftdoc</key>
@@ -354,22 +354,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			ncjW/DbvlXMbEkuhdQLW5iV2UYI=
+			tmdQ4EO0qCXNJuxEbjIURmu0UI4=
 			</data>
 			<key>hash2</key>
 			<data>
-			DPte5SWq9Exz0hd8zdGElIQZigC/du/j+6sNiamEzmk=
+			gUOJYsiivVBQpjRuG45x05aCTM/ZSgWfDuXhgLxOrXE=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/i386.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NhQTdO9++kJTDVRp6FfxecUZeLM=
+			Xyz+4ZAVuiJIjgKtkp44OCvV+0E=
 			</data>
 			<key>hash2</key>
 			<data>
-			kuoCRE8MdR3OyFFKs4qsIwpTVNokiQzM3GDAiC2vecg=
+			HJgtouGI4ypWj8Awf/Z9XDrezXO+SLlnDjcOYlwoyeo=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -387,22 +387,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2lvol3zSim0L7m6cgLVstRXpUY=
+			kxAeVc2pyok/VpYb6OHj++cOecA=
 			</data>
 			<key>hash2</key>
 			<data>
-			C7M4Lyle0lRZEN7aNkFjjWFKxc2AjlKFVCXIGCOE6lY=
+			h+3Y+cm11apwvqKzHuwbghk0uB68vlowR2L7Xqrra2I=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IG3OrRCjF+llE8ZpUHSFfjPBUdM=
+			GSRZrUH/gK+SlI4dpdW/T/CoUuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANgk0R9Znn0Qg6+FIn0HZUlQlyYMsPLAfNdZ78Od1CU=
+			w4pUna5QX6jzfHsQj3d+humq0SOadAiBYDiAU7o6aPg=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/x86_64.swiftdoc</key>
@@ -420,22 +420,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			G2lvol3zSim0L7m6cgLVstRXpUY=
+			kxAeVc2pyok/VpYb6OHj++cOecA=
 			</data>
 			<key>hash2</key>
 			<data>
-			C7M4Lyle0lRZEN7aNkFjjWFKxc2AjlKFVCXIGCOE6lY=
+			h+3Y+cm11apwvqKzHuwbghk0uB68vlowR2L7Xqrra2I=
 			</data>
 		</dict>
 		<key>Modules/RichFlyer.swiftmodule/x86_64.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			IG3OrRCjF+llE8ZpUHSFfjPBUdM=
+			GSRZrUH/gK+SlI4dpdW/T/CoUuc=
 			</data>
 			<key>hash2</key>
 			<data>
-			ANgk0R9Znn0Qg6+FIn0HZUlQlyYMsPLAfNdZ78Od1CU=
+			w4pUna5QX6jzfHsQj3d+humq0SOadAiBYDiAU7o6aPg=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -453,11 +453,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zw2yHFkmDC3/KHO42I7F0zCz5Rc=
+			ChzZeGkFJS1TdEbBSBgRzvBhVUM=
 			</data>
 			<key>hash2</key>
 			<data>
-			j/NKXeceCdovCwNSdMql3OMZKSLzst7aAGDHISSYfVE=
+			9eEoO5iBm38lCcg89a83Q57Cao8gE05FEy/RVFyFjGo=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -466,11 +466,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jwghs0NtwfnMhRWTLguekEMgYYQ=
+			Xga1ICChpahkC1HngkcXAI91DmI=
 			</data>
 			<key>hash2</key>
 			<data>
-			f7mgGeaGRih69gb7jTK8F9bvkDUwcdU6pIbkSkMS3ys=
+			uzMvBr0UejPPQVUuhE+WSw/eOoCQxJYRxCqGnNq4V3E=
 			</data>
 			<key>optional</key>
 			<true/>
