@@ -78,7 +78,6 @@
 		C281CA8C221D552F003362FE /* InputParameterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputParameterView.swift; sourceTree = "<group>"; };
 		C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		C281CA8F221D552F003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C281CA90221D552F003362FE /* RichFlyerSampleSwift.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = RichFlyerSampleSwift.entitlements; sourceTree = "<group>"; };
 		C281CA93221D552F003362FE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = LaunchScreen.strings; sourceTree = "<group>"; };
 		C281CA95221D552F003362FE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Main.strings; sourceTree = "<group>"; };
 		C281CA98221D5530003362FE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -160,7 +159,6 @@
 				C281CA8C221D552F003362FE /* InputParameterView.swift */,
 				C281CA91221D552F003362FE /* ja.lproj */,
 				C281CA98221D5530003362FE /* Model.swift */,
-				C281CA90221D552F003362FE /* RichFlyerSampleSwift.entitlements */,
 				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
 				C281CA6F221D2CD3003362FE /* AppDelegate.swift */,
 				C281CA71221D2CD3003362FE /* ViewController.swift */,
