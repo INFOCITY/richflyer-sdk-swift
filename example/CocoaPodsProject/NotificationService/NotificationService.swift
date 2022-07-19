@@ -25,7 +25,7 @@ class NotificationService: UNNotificationServiceExtension {
             RFNotificationService.configureRFNotification(content: bestAttemptContent,
                                                           appGroupId: groupId,
                                                           completeHandler: { (content) in
-                                                            contentHandler(bestAttemptContent)
+                                                            contentHandler(content)
             })
           }
         }
