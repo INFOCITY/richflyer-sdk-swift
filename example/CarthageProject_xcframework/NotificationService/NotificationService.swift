@@ -24,6 +24,7 @@ class NotificationService: UNNotificationServiceExtension {
               if let groupId = rfConf["groupId"] as? String {
                 RFNotificationService.configureRFNotification(content: bestAttemptContent,
                                                               appGroupId: groupId,
+                                                              displayNavigate: true,
                                                               completeHandler: { (content) in
                                                                 contentHandler(content)
                 })
