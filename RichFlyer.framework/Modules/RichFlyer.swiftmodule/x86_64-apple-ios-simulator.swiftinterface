@@ -32,6 +32,7 @@ public struct RFResult {
   public static func registSegments(segments: [Swift.String : Swift.String], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
   public static func getSegments() -> [Swift.String : Swift.String]?
   public static func setLaunchMode(modes: [RichFlyer.RFContentType]?)
+  public static func isRichFlyerNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
   @objc deinit
 }
 public enum RFAuthorizationOptions {
@@ -127,6 +128,7 @@ public enum RFContentType {
 }
 @_hasMissingDesignatedInitializers @available(iOS 10.0, *)
 public class RFNotificationService {
+  public static func configureRFNotification(content: UserNotifications.UNMutableNotificationContent, appGroupId: Swift.String, displayNavigate: Swift.Bool, completeHandler: @escaping ((UserNotifications.UNMutableNotificationContent) -> Swift.Void))
   public static func configureRFNotification(content: UserNotifications.UNMutableNotificationContent, appGroupId: Swift.String, completeHandler: @escaping ((UserNotifications.UNMutableNotificationContent) -> Swift.Void))
   @objc deinit
 }
