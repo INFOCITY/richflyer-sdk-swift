@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		srBrdV5HjfztLPovvBOOo3tEEJI=
+		GSZTejP/Dk3yjjLhIn4fwYEjGVw=
 		</data>
 		<key>Headers/RichFlyer-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pfdvINhLrTEMKDVRjNXQebpEnFc=
+		1CeiGOy1l4jNiIi2sHqZ40TUy0Y=
 		</data>
 		<key>Modules/RichFlyer.swiftmodule/Project/arm64-apple-ios-simulator.swiftsourceinfo</key>
 		<data>
@@ -145,11 +145,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			srBrdV5HjfztLPovvBOOo3tEEJI=
+			GSZTejP/Dk3yjjLhIn4fwYEjGVw=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbnljLt1TK8QwSNfFisv1zMZCn1eEp+ARo1Kk2qQev4=
+			+RJnou8haKQhB9P9/oZASAN/JZDYBCRMv0P+WjhIPoo=
 			</data>
 		</dict>
 		<key>Headers/RichFlyer-Swift.h</key>
