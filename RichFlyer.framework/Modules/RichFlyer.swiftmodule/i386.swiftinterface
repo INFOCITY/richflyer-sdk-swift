@@ -30,6 +30,10 @@ public struct RFResult {
   @available(*, deprecated, message: "Use registSegments(segments:completion:) instead")
   public static func registSegments(segments: [Swift.String : Swift.String], completion: @escaping (Swift.Bool) -> Swift.Void)
   public static func registSegments(segments: [Swift.String : Swift.String], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
+  public static func registSegments(dateSegments: [Swift.String : Foundation.Date], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
+  public static func registSegments(intSegments: [Swift.String : Swift.Int], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
+  public static func registSegments(boolSegments: [Swift.String : Swift.Bool], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
+  public static func registSegments(stringSegments: [Swift.String : Swift.String], intSegments: [Swift.String : Swift.Int], boolSegments: [Swift.String : Swift.Bool], dateSegments: [Swift.String : Foundation.Date], completion: @escaping (RichFlyer.RFResult) -> Swift.Void)
   public static func getSegments() -> [Swift.String : Swift.String]?
   public static func setLaunchMode(modes: [RichFlyer.RFContentType]?)
   public static func isRichFlyerNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
