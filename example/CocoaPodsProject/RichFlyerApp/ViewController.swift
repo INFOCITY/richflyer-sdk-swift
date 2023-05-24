@@ -114,7 +114,35 @@ class ViewController: UIViewController {
 	
 	//MARK: etc method
 	@objc func registerSegment() {
-		RFApp.registSegments(segments: model.dictionary, completion: { (result: RFResult) in
+        var stringSegments : [String : String] = [:]
+        var intSegments : [String : Int] = [:]
+        var boolSegments : [String : Bool] = [:]
+        var dateSegments : [String : Date] = [:]
+        
+        let segments = model.dictionary
+        segments.forEach { (key: String, value: Any) in
+            switch value {
+            case is String:
+                let strValue = value as! String
+                if strValue == "YES" {
+                    boolSegments[key] = true
+                } else if strValue == "NO" {
+                    boolSegments[key] = false
+                } else {
+                    stringSegments[key] = strValue
+                }
+            case is Int:
+                intSegments[key] = (value as! Int)
+            default:
+                return
+            }
+        }
+        
+        dateSegments["registeredDate"] = Date()
+
+        RFApp.registSegments(stringSegments: stringSegments, intSegments: intSegments,
+                             boolSegments: boolSegments, dateSegments: dateSegments, completion:{ (result: RFResult) in
+        
 			DispatchQueue.main.async {
 				var message = ""
                 if result.result {

@@ -21,7 +21,7 @@ class InputParameterView: UIView {
 	var pickerView: UIPickerView = UIPickerView()
 	var underBar = UIView()
 	
-	var list: Array<String>?
+	var list: Array<Any>?
 	
 	func loadView() {
 		self.backgroundColor = UIColor.init(red: 0 / 256, green: 150 / 256, blue: 136 / 256, alpha: 1.0)
@@ -44,7 +44,12 @@ class InputParameterView: UIView {
 		let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
 		toolbar.setItems([doneItem], animated: true)
 		
-		self.textField.text = list?[0]
+        let value = list?[0]
+        if value is String {
+            self.textField.text = (value as! String)
+        } else if value is Int {
+            self.textField.text = String((value as! Int))
+        }
 		textField.textColor = UIColor.white
 		textField.textAlignment = .center
 		textField.inputView = pickerView
@@ -79,11 +84,24 @@ extension InputParameterView: UIPickerViewDelegate, UIPickerViewDataSource {
 	}
 
 	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-		return list?[row]
+        let value = list?[row]
+        if value is String {
+            return (value as! String)
+        } else if value is Int {
+            return String((value as! Int))
+        }
+
+		return ""
 	}
 	
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-		self.textField.text = list?[row]
+        let value = list?[row]
+        if value is String {
+            self.textField.text = (value as! String)
+        } else if value is Int {
+            self.textField.text = String((value as! Int))
+        }
+
 		if let type = type, let value = list?[row] {
 			model?.setValue(key: type, value: value)
 		}

@@ -10,19 +10,19 @@ import Foundation
 enum SegmentParameter: String, CaseIterable {
 	case genre
 	case day
-	case launchCount
-	case dayTime
+	case age
+	case registered
 	
-	func getValues() -> Array<String> {
+	func getValues() -> Array<Any> {
 		switch self {
 		case .genre:
 			return ["comic", "magazine", "novel"]
 		case .day:
 			return ["月", "火", "水", "木", "金", "土", "日"]
-		case .launchCount:
-			return ["0-100", "101-1000", "1001-5000", "5001-10000"]
-		case .dayTime:
-			return ["朝", "昼", "晩", "深夜"]
+		case .age:
+			return [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+		case .registered:
+			return ["YES", "NO"]
 		}
 	}
 }
@@ -109,16 +109,16 @@ enum NotificationParameter: CaseIterable {
 }
 
 class Model {
-	var segmentParams: [SegmentParameter] = [.genre, .day, .launchCount, .dayTime]
+	var segmentParams: [SegmentParameter] = [.genre, .day, .age, .registered]
 	var eventParams: [EventParameter] = [.store, .recommend, .wishList, .cart, .purchase]
 	var notificationParams: [NotificationParameter] = [.store, .recommend, .wishList, .itemDetail, .feature, .web]
 
 	var dictionary = [SegmentParameter.genre.rawValue: SegmentParameter.genre.getValues()[0],
 					  SegmentParameter.day.rawValue: SegmentParameter.day.getValues()[0],
-					  SegmentParameter.launchCount.rawValue: SegmentParameter.launchCount.getValues()[0],
-					  SegmentParameter.dayTime.rawValue: SegmentParameter.dayTime.getValues()[0]]
+					  SegmentParameter.age.rawValue: SegmentParameter.age.getValues()[0],
+					  SegmentParameter.registered.rawValue: SegmentParameter.registered.getValues()[0]]
 	
-	func setValue(key: SegmentParameter, value: String) {
+	func setValue(key: SegmentParameter, value: Any) {
 		dictionary[key.rawValue] = value
 	}
 
@@ -126,7 +126,12 @@ class Model {
 		var str: String = ""
 		for param in segmentParams {
 			let value = dictionary[param.rawValue] ?? ""
-			str = str + param.rawValue + " : " + value + "\n"
+            if value is String {
+                str = str + param.rawValue + " : " + (value as! String) + "\n"
+            } else if value is Int {
+                str = str + param.rawValue + " : " + String((value as! Int)) + "\n"
+            }
+
 		}
 		return str
 	}
