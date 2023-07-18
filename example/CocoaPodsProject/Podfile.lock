@@ -1,16 +1,16 @@
 PODS:
-  - SwiftRichFlyer (3.5.0)
+  - SwiftRichFlyer (3.5.6)
 
 DEPENDENCIES:
-  - SwiftRichFlyer (= 3.5.0)
+  - SwiftRichFlyer (= 3.5.6)
 
 SPEC REPOS:
   https://github.com/INFOCITY/richflyer-specs.git:
     - SwiftRichFlyer
 
 SPEC CHECKSUMS:
-  SwiftRichFlyer: 04c611e8ab203369776f8e7374dd586cdff82f18
+  SwiftRichFlyer: 2a987aa90d54d41be2dccfb27577ae85cdc46a87
 
-PODFILE CHECKSUM: e5618be603c7b313b1fb8bfc96c0a7322522d49c
+PODFILE CHECKSUM: 4d889c1d61eaeba7b58c78677d0b6c04a9a80a58
 
 COCOAPODS: 1.11.3
