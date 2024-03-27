@@ -14,7 +14,7 @@ class ViewController: UIViewController {
 	//MARK: property
 	
 	let margin: CGFloat = 8
-	let itemCount: CGFloat = 5
+	let itemCount: CGFloat = 7
 
 	var model = Model()
 	
@@ -39,12 +39,15 @@ class ViewController: UIViewController {
 	}
 	
 	func initViews() {
-		for type in model.segmentParams {
-			let input = InputParameterView()
-			input.model = model
-			input.type = type
-			inputViews.append(input)
-		}
+        let segmentsParam = model.segmentParams
+        let segments = segmentsParam
+        
+        for type in segments {
+            let input = InputParameterView()
+            input.model = model
+            input.type = type
+          inputViews.append(input)
+        }
 	}
 	
 	//MARK: ViewController's life cycle
@@ -64,12 +67,16 @@ class ViewController: UIViewController {
 			self.view.addSubview(input)
 		}
 		
+		#if APNS_SANDBOX
+		sendSegment.setTitle("登録(SB)", for: .normal)
+		#else
 		sendSegment.setTitle("登録", for: .normal)
+		#endif
 		sendSegment.setTitleColor(UIColor.white, for: .normal)
 		sendSegment.backgroundColor = UIColor.darkGray
 		sendSegment.addTarget(self, action: #selector(registerSegment), for: .touchUpInside)
 		self.view.addSubview(sendSegment)
-	}
+    }
 	
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -114,35 +121,37 @@ class ViewController: UIViewController {
 	
 	//MARK: etc method
 	@objc func registerSegment() {
-        var stringSegments : [String : String] = [:]
-        var intSegments : [String : Int] = [:]
-        var boolSegments : [String : Bool] = [:]
-        var dateSegments : [String : Date] = [:]
-        
-        let segments = model.dictionary
-        segments.forEach { (key: String, value: Any) in
-            switch value {
-            case is String:
-                let strValue = value as! String
-                if strValue == "YES" {
-                    boolSegments[key] = true
-                } else if strValue == "NO" {
-                    boolSegments[key] = false
-                } else {
-                    stringSegments[key] = strValue
-                }
-            case is Int:
-                intSegments[key] = (value as! Int)
-            default:
-                return
-            }
-        }
-        
-        dateSegments["registeredDate"] = Date()
 
-        RFApp.registSegments(stringSegments: stringSegments, intSegments: intSegments,
-                             boolSegments: boolSegments, dateSegments: dateSegments, completion:{ (result: RFResult) in
+		let segments = model.dictionary;
+
+		var stringSegments : [String : String] = [:]
+		var intSegments : [String : Int] = [:]
+		var boolSegments : [String : Bool] = [:]
+		var dateSegments : [String : Date] = [:]
         
+    segments.forEach { (key: String, value: Any) in
+      
+			switch value {
+			case is String:
+					let strValue = value as! String
+					if strValue == "YES" || strValue == "true" {
+							boolSegments[key] = true
+					} else if strValue == "NO" || strValue == "false" {
+							boolSegments[key] = false
+					} else {
+							stringSegments[key] = strValue
+					}
+			case is Int:
+					intSegments[key] = (value as! Int)
+			case is Date:
+				dateSegments[key] = (value as! Date)
+			default:
+					return
+			}
+		}
+		
+		RFApp.registSegments(stringSegments: stringSegments, intSegments: intSegments,
+                             boolSegments: boolSegments, dateSegments: dateSegments, completion: { (result: RFResult) in
 			DispatchQueue.main.async {
 				var message = ""
                 if result.result {

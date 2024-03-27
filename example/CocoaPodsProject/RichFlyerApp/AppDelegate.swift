@@ -20,18 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	//MARK: UIApplicationDelegate
 	func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
 
-    if let confPath = Bundle.main.path(forResource: "RichFlyer", ofType: "plist") {
-      if let rfConf = NSDictionary(contentsOfFile: confPath) {
-        if let serviceKey = rfConf["serviceKey"] as? String,
-          let groupId = rfConf["groupId"] as? String {
-          RFApp.setServiceKey(serviceKey: serviceKey,
-                            appGroupId: groupId,
-                            sandbox: true)
-        }
-      }
-    }
+        setServiceKey()
 
-    if #available(iOS 10.0, *) {
+        if #available(iOS 10.0, *) {
 			//通知のDelegate設定
 			RFApp.setRFNotficationDelegate(delegate: self)
 		}
@@ -52,15 +43,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if (!result.result) {
                 // 失敗
                 print(result.message + "(code:\(result.code))")
+            } else {
+                UserDefaults.standard.set(deviceToken, forKey: "deviceToken")
+                print("Register device token succeeded!")
             }
         })
-		
+
 		#if DEBUG
 			let token = deviceToken.map{String(format: "%.2hhx", $0)}.joined()
 			print("deviceToken: \(token)")
 		#endif
 	}
-	
+  
 	func applicationWillResignActive(_ application: UIApplication) {
 	}
 	
@@ -77,6 +71,36 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 	
 	func applicationWillTerminate(_ application: UIApplication) {
 	}
+    
+    private func setServiceKey() {
+        
+        guard let infoPlist = Bundle.main.infoDictionary else {
+            return
+        }
+
+        guard let rfConf = infoPlist["RichFlyer"] as? NSDictionary else {
+            return
+        }
+
+        var serviceKey : String?
+        let groupId : String? = rfConf["groupId"] as? String
+
+        if let service = UserDefaults.standard.dictionary(forKey: "service") as? [String:String] {
+            serviceKey = service["serviceKey"]
+        } else {
+            serviceKey = rfConf["serviceKey"] as? String
+        }
+
+        #if APNS_SANDBOX
+        let sandbox = true;
+        #else
+        let sandbox = false;
+        #endif
+
+        if let useServiceKey = serviceKey, let useGroupId = groupId {
+            RFApp.setServiceKey(serviceKey: useServiceKey, appGroupId: useGroupId, sandbox: sandbox)
+        }
+    }
 }
 
 @available(iOS 10, *)
@@ -97,7 +121,11 @@ extension AppDelegate: RFNotificationDelegate {
 	                             willPresent notification: UNNotification,
 	                             withCompletionHandler completionHandler: @escaping (UNNotificationPresentationOptions) -> Void) {
 		//		RichFlyer.createAction(notification: notification)
-		RFApp.willPresentNotification(options: [.badge, .alert, .sound], completionHandler: completionHandler)
+    if #available(iOS 14.0, *) {
+      RFApp.willPresentNotification(options: [.badge, .banner, .sound], completionHandler: completionHandler)
+    } else {
+      RFApp.willPresentNotification(options: [.badge, .alert, .sound], completionHandler: completionHandler)
+    }
 	}
 	
 	func didReceiveNotification(_ center: UNUserNotificationCenter,

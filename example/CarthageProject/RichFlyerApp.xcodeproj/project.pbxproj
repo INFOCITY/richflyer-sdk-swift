@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C20E057323606E8000F84CAE /* RecieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E057223606E7F00F84CAE /* RecieveViewController.swift */; };
+		C24C1CCA2B16CEF90039DE16 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CC72B16CEF90039DE16 /* EventViewController.swift */; };
+		C24C1CCB2B16CEF90039DE16 /* RecievedNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CC82B16CEF90039DE16 /* RecievedNotificationCell.swift */; };
+		C24C1CCC2B16CEF90039DE16 /* RecievedNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CC92B16CEF90039DE16 /* RecievedNotificationCell.xib */; };
 		C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA6F221D2CD3003362FE /* AppDelegate.swift */; };
 		C281CA72221D2CD3003362FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA71221D2CD3003362FE /* ViewController.swift */; };
 		C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281CA76221D2CD4003362FE /* Assets.xcassets */; };
@@ -27,7 +30,6 @@
 		C298C5F3221F9C2F00E1A906 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C298C5EC221F9C2F00E1A906 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C298C5F8221F9D5900E1A906 /* RichFlyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA83221D2F92003362FE /* RichFlyer.framework */; };
 		C298C5FA221F9D6C00E1A906 /* RichFlyer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C281CA83221D2F92003362FE /* RichFlyer.framework */; };
-		C298C5FD221F9EA300E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FC221F9EA200E1A906 /* RichFlyer.plist */; };
 		C298C5FF221FA7EA00E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FE221FA7EA00E1A906 /* RichFlyer.plist */; };
 /* End PBXBuildFile section */
 
@@ -65,6 +67,9 @@
 
 /* Begin PBXFileReference section */
 		C20E057223606E7F00F84CAE /* RecieveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieveViewController.swift; sourceTree = "<group>"; };
+		C24C1CC72B16CEF90039DE16 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		C24C1CC82B16CEF90039DE16 /* RecievedNotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedNotificationCell.swift; sourceTree = "<group>"; };
+		C24C1CC92B16CEF90039DE16 /* RecievedNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedNotificationCell.xib; sourceTree = "<group>"; };
 		C281CA6C221D2CD3003362FE /* RichFlyerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichFlyerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C281CA6F221D2CD3003362FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C281CA71221D2CD3003362FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,7 +98,6 @@
 		C298C5EE221F9C2F00E1A906 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		C298C5F0221F9C2F00E1A906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C298C5F7221F9C3400E1A906 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
-		C298C5FC221F9EA200E1A906 /* RichFlyer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RichFlyer.plist; sourceTree = "<group>"; };
 		C298C5FE221FA7EA00E1A906 /* RichFlyer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RichFlyer.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -151,17 +155,19 @@
 		C281CA6E221D2CD3003362FE /* RichFlyerApp */ = {
 			isa = PBXGroup;
 			children = (
-				C20E057223606E7F00F84CAE /* RecieveViewController.swift */,
-				C298C5FC221F9EA200E1A906 /* RichFlyer.plist */,
 				C298C5CF221F9BBA00E1A906 /* RichFlyerApp.entitlements */,
 				C281CA8F221D552F003362FE /* Assets.xcassets */,
-				C281CA87221D552F003362FE /* Base.lproj */,
+				C24C1CC72B16CEF90039DE16 /* EventViewController.swift */,
+				C24C1CC82B16CEF90039DE16 /* RecievedNotificationCell.swift */,
+				C24C1CC92B16CEF90039DE16 /* RecievedNotificationCell.xib */,
+				C20E057223606E7F00F84CAE /* RecieveViewController.swift */,
 				C281CA8C221D552F003362FE /* InputParameterView.swift */,
-				C281CA91221D552F003362FE /* ja.lproj */,
-				C281CA98221D5530003362FE /* Model.swift */,
-				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
-				C281CA6F221D2CD3003362FE /* AppDelegate.swift */,
 				C281CA71221D2CD3003362FE /* ViewController.swift */,
+				C281CA98221D5530003362FE /* Model.swift */,
+				C281CA6F221D2CD3003362FE /* AppDelegate.swift */,
+				C281CA87221D552F003362FE /* Base.lproj */,
+				C281CA91221D552F003362FE /* ja.lproj */,
+				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
 				C281CA73221D2CD3003362FE /* Main.storyboard */,
 				C281CA76221D2CD4003362FE /* Assets.xcassets */,
 				C281CA78221D2CD4003362FE /* LaunchScreen.storyboard */,
@@ -346,7 +352,7 @@
 				C281CA9F221D5530003362FE /* Main.strings in Resources */,
 				C281CA7A221D2CD4003362FE /* LaunchScreen.storyboard in Resources */,
 				C281CA9A221D5530003362FE /* Main.storyboard in Resources */,
-				C298C5FD221F9EA300E1A906 /* RichFlyer.plist in Resources */,
+				C24C1CCC2B16CEF90039DE16 /* RecievedNotificationCell.xib in Resources */,
 				C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */,
 				C281CA9E221D5530003362FE /* LaunchScreen.strings in Resources */,
 			);
@@ -397,11 +403,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24C1CCB2B16CEF90039DE16 /* RecievedNotificationCell.swift in Sources */,
 				C281CAA2221D5530003362FE /* Model.swift in Sources */,
 				C281CA9B221D5530003362FE /* InputParameterView.swift in Sources */,
 				C20E057323606E8000F84CAE /* RecieveViewController.swift in Sources */,
 				C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */,
 				C281CA72221D2CD3003362FE /* ViewController.swift in Sources */,
+				C24C1CCA2B16CEF90039DE16 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,11 +636,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DAPNS_SANDBOX";
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -655,7 +664,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -680,7 +689,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -707,7 +716,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -726,14 +735,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8NA27XCC2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -741,6 +750,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -752,13 +762,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Q8NA27XCC2;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

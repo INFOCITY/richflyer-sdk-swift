@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="61k-Sd-X2w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="61k-Sd-X2w">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -13,6 +14,7 @@
                 <navigationController id="YPI-Bs-s5X" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Received" image="Received" id="1XP-Uw-Eh1"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GWz-vl-pfs">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -23,10 +25,10 @@
             </objects>
             <point key="canvasLocation" x="654" y="944"/>
         </scene>
-        <!--Recieve View Controller-->
+        <!--Received-->
         <scene sceneID="Elz-fy-bQf">
             <objects>
-                <viewController id="cV4-GI-akz" customClass="RecieveViewController" customModule="RichDlyer_S" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cV4-GI-akz" customClass="RecieveViewController" customModule="RichFlyerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JGC-h8-wcu"/>
                         <viewControllerLayoutGuide type="bottom" id="uM3-Na-MGN"/>
@@ -35,30 +37,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJM-j8-cQV">
-                                <rect key="frame" x="87.5" y="233.5" width="200" height="200"/>
-                                <color key="backgroundColor" red="0.17254901960784313" green="0.59999999999999998" blue="0.82745098039215681" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="UIR-ov-LRR"/>
-                                    <constraint firstAttribute="height" constant="200" id="ruc-PI-awd"/>
-                                </constraints>
-                                <state key="normal" title="受信した通知を表示">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="show" destination="cV4-GI-akz" eventType="touchUpInside" id="u2I-pY-3xv"/>
-                                </connections>
-                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dAN-B4-Wrk">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="recievedData" id="2kc-4o-GEj" customClass="RecievedNotificationCell" customModule="RichFlyerApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2kc-4o-GEj" id="Tz2-yl-W9l">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="QJM-j8-cQV" firstAttribute="centerX" secondItem="obb-39-8pY" secondAttribute="centerX" id="KH4-XY-zD0"/>
-                            <constraint firstItem="QJM-j8-cQV" firstAttribute="centerY" secondItem="obb-39-8pY" secondAttribute="centerY" id="h63-vf-VjC"/>
+                            <constraint firstItem="dAN-B4-Wrk" firstAttribute="leading" secondItem="obb-39-8pY" secondAttribute="leading" id="3UQ-ma-5En"/>
+                            <constraint firstItem="dAN-B4-Wrk" firstAttribute="top" secondItem="JGC-h8-wcu" secondAttribute="bottom" id="7QM-rs-bTo"/>
+                            <constraint firstItem="uM3-Na-MGN" firstAttribute="top" secondItem="dAN-B4-Wrk" secondAttribute="bottom" id="Joq-qh-uKz"/>
+                            <constraint firstAttribute="trailing" secondItem="dAN-B4-Wrk" secondAttribute="trailing" id="TaO-CR-Jjx"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="a2e-g8-NAS"/>
+                    <navigationItem key="navigationItem" title="Received" id="a2e-g8-NAS"/>
                     <connections>
-                        <outlet property="button" destination="QJM-j8-cQV" id="yhE-Cd-LBr"/>
+                        <outlet property="tableView" destination="dAN-B4-Wrk" id="5ff-O3-Iz5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wb6-2x-NOD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -71,6 +75,7 @@
                 <navigationController id="KGH-Ju-oV2" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Segment" image="Segment" id="cwc-dp-YFW"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qv9-fb-lhW">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -84,7 +89,7 @@
         <!--Segment-->
         <scene sceneID="nLC-um-agy">
             <objects>
-                <viewController title="Segment" id="COg-ad-QfG" customClass="ViewController" customModule="RichDlyer_S" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Segment" id="COg-ad-QfG" customClass="ViewController" customModule="RichFlyerApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wbd-Dm-Udt"/>
                         <viewControllerLayoutGuide type="bottom" id="ao5-1H-BcY"/>
@@ -100,6 +105,42 @@
             </objects>
             <point key="canvasLocation" x="1577" y="-492"/>
         </scene>
+        <!--Event-->
+        <scene sceneID="CaW-UZ-KXG">
+            <objects>
+                <navigationController id="GXT-hQ-SJX" userLabel="Event" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Event" image="Event" id="jrp-tb-wO6" userLabel="Event"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="33G-5j-xkG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Gd7-JJ-ZJL" kind="relationship" relationship="rootViewController" id="z2u-S1-76v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9TE-db-j0D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="702" y="156"/>
+        </scene>
+        <!--Event View Controller-->
+        <scene sceneID="kYR-mi-0CZ">
+            <objects>
+                <viewController id="Gd7-JJ-ZJL" userLabel="Event View Controller" customClass="EventViewController" customModule="RichFlyerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="6fq-1I-chB"/>
+                        <viewControllerLayoutGuide type="bottom" id="WlH-hs-rQf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GtT-gW-S5C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Event" id="tAR-XY-SUQ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IdI-TG-O5J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1581.5999999999999" y="154.27286356821591"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="SoE-Ro-1jK">
             <objects>
@@ -112,6 +153,7 @@
                     <connections>
                         <segue destination="KGH-Ju-oV2" kind="relationship" relationship="viewControllers" id="xDz-mE-ynE"/>
                         <segue destination="YPI-Bs-s5X" kind="relationship" relationship="viewControllers" id="duX-Xu-dkp"/>
+                        <segue destination="GXT-hQ-SJX" kind="relationship" relationship="viewControllers" id="Oxy-TV-soq"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7tG-Pm-KqJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -120,7 +162,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Event" width="32" height="32"/>
         <image name="Received" width="32" height="32"/>
         <image name="Segment" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

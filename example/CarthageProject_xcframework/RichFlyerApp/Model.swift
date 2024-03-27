@@ -7,11 +7,14 @@
 
 import Foundation
 
+
 enum SegmentParameter: String, CaseIterable {
 	case genre
 	case day
 	case age
 	case registered
+  case birthday
+  case installedDate
 	
 	func getValues() -> Array<Any> {
 		switch self {
@@ -22,9 +25,31 @@ enum SegmentParameter: String, CaseIterable {
 		case .age:
 			return [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
 		case .registered:
-			return ["YES", "NO"]
+			return ["true", "false"]
+    case .birthday:
+      return [Date()]
+    case .installedDate:
+      return [Date()]
 		}
 	}
+	
+	func getName() -> String {
+		switch self {
+		case .genre:
+			return "ジャンル"
+		case .day:
+			return "曜日"
+		case .age:
+			return "年齢"
+		case .registered:
+			return "登録状況"
+		case .birthday:
+			return "誕生日"
+		case .installedDate:
+			return "インストール日"
+		}
+	}
+
 }
 
 enum EventParameter: CaseIterable {
@@ -109,15 +134,25 @@ enum NotificationParameter: CaseIterable {
 }
 
 class Model {
-	var segmentParams: [SegmentParameter] = [.genre, .day, .age, .registered]
+  var segmentParams: [SegmentParameter] = [.genre, .day, .age, .registered, .birthday, .installedDate]
 	var eventParams: [EventParameter] = [.store, .recommend, .wishList, .cart, .purchase]
 	var notificationParams: [NotificationParameter] = [.store, .recommend, .wishList, .itemDetail, .feature, .web]
+
 
 	var dictionary = [SegmentParameter.genre.rawValue: SegmentParameter.genre.getValues()[0],
 					  SegmentParameter.day.rawValue: SegmentParameter.day.getValues()[0],
 					  SegmentParameter.age.rawValue: SegmentParameter.age.getValues()[0],
-					  SegmentParameter.registered.rawValue: SegmentParameter.registered.getValues()[0]]
-	
+					  SegmentParameter.registered.rawValue: SegmentParameter.registered.getValues()[0],
+										SegmentParameter.birthday.rawValue: SegmentParameter.birthday.getValues()[0],
+										SegmentParameter.installedDate.rawValue: SegmentParameter.installedDate.getValues()[0]
+  ]
+
+  static func getDateString(date: Date) -> String {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat  = "yyyy/MM/dd"
+    return dateFormatter.string(from: date)
+  }
+  
 	func setValue(key: SegmentParameter, value: Any) {
 		dictionary[key.rawValue] = value
 	}
@@ -126,12 +161,7 @@ class Model {
 		var str: String = ""
 		for param in segmentParams {
 			let value = dictionary[param.rawValue] ?? ""
-            if value is String {
-                str = str + param.rawValue + " : " + (value as! String) + "\n"
-            } else if value is Int {
-                str = str + param.rawValue + " : " + String((value as! Int)) + "\n"
-            }
-
+            str = str + param.rawValue + " : " + String(describing: value) + "\n"
 		}
 		return str
 	}

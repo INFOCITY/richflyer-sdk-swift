@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,9 +14,12 @@
 		8C9E1C69269EE26500FBD755 /* RichFlyer.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9E1C62269EE1C500FBD755 /* RichFlyer.xcframework */; };
 		8C9E1C6A269EE26500FBD755 /* RichFlyer.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8C9E1C62269EE1C500FBD755 /* RichFlyer.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C20E057323606E8000F84CAE /* RecieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20E057223606E7F00F84CAE /* RecieveViewController.swift */; };
+		C24C1CCE2B16D3F20039DE16 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CCD2B16D3F20039DE16 /* EventViewController.swift */; };
+		C24C1CD12B16D4570039DE16 /* RecievedNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CCF2B16D4570039DE16 /* RecievedNotificationCell.swift */; };
+		C24C1CD22B16D4570039DE16 /* RecievedNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CD02B16D4570039DE16 /* RecievedNotificationCell.xib */; };
+		C24C1CD52B16D5AB0039DE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CD42B16D5AB0039DE16 /* Assets.xcassets */; };
 		C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA6F221D2CD3003362FE /* AppDelegate.swift */; };
 		C281CA72221D2CD3003362FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA71221D2CD3003362FE /* ViewController.swift */; };
-		C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281CA76221D2CD4003362FE /* Assets.xcassets */; };
 		C281CA7A221D2CD4003362FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CA78221D2CD4003362FE /* LaunchScreen.storyboard */; };
 		C281CA9A221D5530003362FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CA8A221D552F003362FE /* Main.storyboard */; };
 		C281CA9B221D5530003362FE /* InputParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA8C221D552F003362FE /* InputParameterView.swift */; };
@@ -30,7 +33,6 @@
 		C298C5E2221F9BF800E1A906 /* NotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C298C5D4221F9BF700E1A906 /* NotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		C298C5EF221F9C2F00E1A906 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C298C5EE221F9C2F00E1A906 /* NotificationService.swift */; };
 		C298C5F3221F9C2F00E1A906 /* NotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = C298C5EC221F9C2F00E1A906 /* NotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C298C5FD221F9EA300E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FC221F9EA200E1A906 /* RichFlyer.plist */; };
 		C298C5FF221FA7EA00E1A906 /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C298C5FE221FA7EA00E1A906 /* RichFlyer.plist */; };
 /* End PBXBuildFile section */
 
@@ -100,20 +102,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		8C9E1C62269EE1C500FBD755 /* RichFlyer.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RichFlyer.xcframework; path = Carthage/Build/RichFlyer.xcframework; sourceTree = "<group>"; };
+		8C9E1C62269EE1C500FBD755 /* RichFlyer.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:Q8NA27XCC2:INFOCITY,Inc."; lastKnownFileType = wrapper.xcframework; name = RichFlyer.xcframework; path = Carthage/Build/RichFlyer.xcframework; sourceTree = "<group>"; };
 		C20E057223606E7F00F84CAE /* RecieveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieveViewController.swift; sourceTree = "<group>"; };
+		C24C1CCD2B16D3F20039DE16 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		C24C1CCF2B16D4570039DE16 /* RecievedNotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedNotificationCell.swift; sourceTree = "<group>"; };
+		C24C1CD02B16D4570039DE16 /* RecievedNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedNotificationCell.xib; sourceTree = "<group>"; };
+		C24C1CD42B16D5AB0039DE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CA6C221D2CD3003362FE /* RichFlyerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichFlyerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C281CA6F221D2CD3003362FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C281CA71221D2CD3003362FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C281CA74221D2CD3003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C281CA76221D2CD4003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CA79221D2CD4003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C281CA7B221D2CD4003362FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C281CA89221D552F003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C281CA8B221D552F003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
 		C281CA8C221D552F003362FE /* InputParameterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputParameterView.swift; sourceTree = "<group>"; };
 		C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
-		C281CA8F221D552F003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CA93221D552F003362FE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = LaunchScreen.strings; sourceTree = "<group>"; };
 		C281CA95221D552F003362FE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = Main.strings; sourceTree = "<group>"; };
 		C281CA98221D5530003362FE /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
@@ -129,7 +133,6 @@
 		C298C5EE221F9C2F00E1A906 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
 		C298C5F0221F9C2F00E1A906 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C298C5F7221F9C3400E1A906 /* NotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NotificationService.entitlements; sourceTree = "<group>"; };
-		C298C5FC221F9EA200E1A906 /* RichFlyer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RichFlyer.plist; sourceTree = "<group>"; };
 		C298C5FE221FA7EA00E1A906 /* RichFlyer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RichFlyer.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -187,20 +190,21 @@
 		C281CA6E221D2CD3003362FE /* RichFlyerApp */ = {
 			isa = PBXGroup;
 			children = (
-				C20E057223606E7F00F84CAE /* RecieveViewController.swift */,
-				C298C5FC221F9EA200E1A906 /* RichFlyer.plist */,
+				C24C1CD42B16D5AB0039DE16 /* Assets.xcassets */,
 				C298C5CF221F9BBA00E1A906 /* RichFlyerApp.entitlements */,
-				C281CA8F221D552F003362FE /* Assets.xcassets */,
-				C281CA87221D552F003362FE /* Base.lproj */,
+				C24C1CCF2B16D4570039DE16 /* RecievedNotificationCell.swift */,
+				C24C1CD02B16D4570039DE16 /* RecievedNotificationCell.xib */,
+				C24C1CCD2B16D3F20039DE16 /* EventViewController.swift */,
+				C20E057223606E7F00F84CAE /* RecieveViewController.swift */,
 				C281CA8C221D552F003362FE /* InputParameterView.swift */,
-				C281CA91221D552F003362FE /* ja.lproj */,
 				C281CA98221D5530003362FE /* Model.swift */,
-				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
 				C281CA6F221D2CD3003362FE /* AppDelegate.swift */,
 				C281CA71221D2CD3003362FE /* ViewController.swift */,
-				C281CA73221D2CD3003362FE /* Main.storyboard */,
-				C281CA76221D2CD4003362FE /* Assets.xcassets */,
+				C281CA87221D552F003362FE /* Base.lproj */,
+				C281CA91221D552F003362FE /* ja.lproj */,
+				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
 				C281CA78221D2CD4003362FE /* LaunchScreen.storyboard */,
+				C281CA73221D2CD3003362FE /* Main.storyboard */,
 				C281CA7B221D2CD4003362FE /* Info.plist */,
 			);
 			path = RichFlyerApp;
@@ -384,8 +388,8 @@
 				C281CA9F221D5530003362FE /* Main.strings in Resources */,
 				C281CA7A221D2CD4003362FE /* LaunchScreen.storyboard in Resources */,
 				C281CA9A221D5530003362FE /* Main.storyboard in Resources */,
-				C298C5FD221F9EA300E1A906 /* RichFlyer.plist in Resources */,
-				C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */,
+				C24C1CD22B16D4570039DE16 /* RecievedNotificationCell.xib in Resources */,
+				C24C1CD52B16D5AB0039DE16 /* Assets.xcassets in Resources */,
 				C281CA9E221D5530003362FE /* LaunchScreen.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -413,11 +417,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C24C1CD12B16D4570039DE16 /* RecievedNotificationCell.swift in Sources */,
 				C281CAA2221D5530003362FE /* Model.swift in Sources */,
 				C281CA9B221D5530003362FE /* InputParameterView.swift in Sources */,
 				C20E057323606E8000F84CAE /* RecieveViewController.swift in Sources */,
 				C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */,
 				C281CA72221D2CD3003362FE /* ViewController.swift in Sources */,
+				C24C1CCE2B16D3F20039DE16 /* EventViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -645,11 +651,12 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DAPNS_SANDBOX";
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -673,7 +680,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -698,7 +705,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,7 +732,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -752,7 +759,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -779,7 +786,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

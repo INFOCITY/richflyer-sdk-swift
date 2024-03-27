@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,7 +11,10 @@
 		8F2D709476FA0444AFF742C0 /* libPods-NotificationService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CB0485550E82BED58A42CDB /* libPods-NotificationService.a */; };
 		BEBABE3F6551D8559031662A /* libPods-RichFlyerApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B120B92C14D4C6147D2AAF9 /* libPods-RichFlyerApp.a */; };
 		C2161F48236191B000F686E2 /* RecieveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2161F47236191B000F686E2 /* RecieveViewController.swift */; };
-		C24CA22C221FAF150055BD8B /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C24CA22B221FAF150055BD8B /* RichFlyer.plist */; };
+		C24C1CD92B16D70A0039DE16 /* RecievedNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CD62B16D70A0039DE16 /* RecievedNotificationCell.swift */; };
+		C24C1CDA2B16D70A0039DE16 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CD72B16D70A0039DE16 /* EventViewController.swift */; };
+		C24C1CDB2B16D70A0039DE16 /* RecievedNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CD82B16D70A0039DE16 /* RecievedNotificationCell.xib */; };
+		C24C1CDD2B16D82D0039DE16 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CDC2B16D82D0039DE16 /* Assets.xcassets */; };
 		C24CA233221FAF710055BD8B /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24CA232221FAF710055BD8B /* UserNotifications.framework */; };
 		C24CA235221FAF710055BD8B /* UserNotificationsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C24CA234221FAF710055BD8B /* UserNotificationsUI.framework */; };
 		C24CA238221FAF710055BD8B /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24CA237221FAF710055BD8B /* NotificationViewController.swift */; };
@@ -22,7 +25,6 @@
 		C24CA256221FB1140055BD8B /* RichFlyer.plist in Resources */ = {isa = PBXBuildFile; fileRef = C24CA255221FB1140055BD8B /* RichFlyer.plist */; };
 		C281CAB0221D60C2003362FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CAAF221D60C2003362FE /* AppDelegate.swift */; };
 		C281CAB2221D60C2003362FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CAB1221D60C2003362FE /* ViewController.swift */; };
-		C281CAB7221D60C2003362FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281CAB6221D60C2003362FE /* Assets.xcassets */; };
 		C281CABA221D60C2003362FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CAB8221D60C2003362FE /* LaunchScreen.storyboard */; };
 		C281CAD6221D6497003362FE /* InputParameterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CAC6221D6496003362FE /* InputParameterView.swift */; };
 		C281CAD8221D6497003362FE /* LaunchScreen.strings in Resources */ = {isa = PBXBuildFile; fileRef = C281CAC9221D6497003362FE /* LaunchScreen.strings */; };
@@ -72,8 +74,11 @@
 		7B120B92C14D4C6147D2AAF9 /* libPods-RichFlyerApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RichFlyerApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB0485550E82BED58A42CDB /* libPods-NotificationService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NotificationService.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2161F47236191B000F686E2 /* RecieveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecieveViewController.swift; sourceTree = "<group>"; };
+		C24C1CD62B16D70A0039DE16 /* RecievedNotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecievedNotificationCell.swift; sourceTree = "<group>"; };
+		C24C1CD72B16D70A0039DE16 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		C24C1CD82B16D70A0039DE16 /* RecievedNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedNotificationCell.xib; sourceTree = "<group>"; };
+		C24C1CDC2B16D82D0039DE16 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C24CA22A221FAF150055BD8B /* RichFlyerApp.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = RichFlyerApp.entitlements; sourceTree = "<group>"; };
-		C24CA22B221FAF150055BD8B /* RichFlyer.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RichFlyer.plist; sourceTree = "<group>"; };
 		C24CA231221FAF710055BD8B /* NotificationContent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NotificationContent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C24CA232221FAF710055BD8B /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		C24CA234221FAF710055BD8B /* UserNotificationsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotificationsUI.framework; path = System/Library/Frameworks/UserNotificationsUI.framework; sourceTree = SDKROOT; };
@@ -90,10 +95,8 @@
 		C281CAAF221D60C2003362FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C281CAB1221D60C2003362FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C281CAB4221D60C2003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C281CAB6221D60C2003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CAB9221D60C2003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C281CABB221D60C2003362FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C281CAC1221D6496003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C281CAC4221D6496003362FE /* Swift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swift-Bridging-Header.h"; sourceTree = "<group>"; };
 		C281CAC6221D6496003362FE /* InputParameterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputParameterView.swift; sourceTree = "<group>"; };
 		C281CACA221D6497003362FE /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = LaunchScreen.strings; sourceTree = "<group>"; };
@@ -195,19 +198,20 @@
 		C281CAAE221D60C2003362FE /* RichFlyerApp */ = {
 			isa = PBXGroup;
 			children = (
-				C2161F47236191B000F686E2 /* RecieveViewController.swift */,
-				C24CA22B221FAF150055BD8B /* RichFlyer.plist */,
+				C24C1CDC2B16D82D0039DE16 /* Assets.xcassets */,
 				C24CA22A221FAF150055BD8B /* RichFlyerApp.entitlements */,
-				C281CAC1221D6496003362FE /* Assets.xcassets */,
 				C281CACD221D6497003362FE /* Base.lproj */,
-				C281CAC6221D6496003362FE /* InputParameterView.swift */,
 				C281CAC8221D6497003362FE /* ja.lproj */,
+				C24C1CD62B16D70A0039DE16 /* RecievedNotificationCell.swift */,
+				C24C1CD72B16D70A0039DE16 /* EventViewController.swift */,
+				C24C1CD82B16D70A0039DE16 /* RecievedNotificationCell.xib */,
+				C2161F47236191B000F686E2 /* RecieveViewController.swift */,
+				C281CAC6221D6496003362FE /* InputParameterView.swift */,
 				C281CAD2221D6497003362FE /* Model.swift */,
-				C281CAC4221D6496003362FE /* Swift-Bridging-Header.h */,
 				C281CAAF221D60C2003362FE /* AppDelegate.swift */,
 				C281CAB1221D60C2003362FE /* ViewController.swift */,
+				C281CAC4221D6496003362FE /* Swift-Bridging-Header.h */,
 				C281CAB3221D60C2003362FE /* Main.storyboard */,
-				C281CAB6221D60C2003362FE /* Assets.xcassets */,
 				C281CAB8221D60C2003362FE /* LaunchScreen.storyboard */,
 				C281CABB221D60C2003362FE /* Info.plist */,
 			);
@@ -385,9 +389,9 @@
 			files = (
 				C281CABA221D60C2003362FE /* LaunchScreen.storyboard in Resources */,
 				C281CAD8221D6497003362FE /* LaunchScreen.strings in Resources */,
-				C24CA22C221FAF150055BD8B /* RichFlyer.plist in Resources */,
-				C281CAB7221D60C2003362FE /* Assets.xcassets in Resources */,
+				C24C1CDB2B16D70A0039DE16 /* RecievedNotificationCell.xib in Resources */,
 				C281CAD9221D6497003362FE /* Main.strings in Resources */,
+				C24C1CDD2B16D82D0039DE16 /* Assets.xcassets in Resources */,
 				C281CADB221D6497003362FE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +506,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C281CADC221D6497003362FE /* Model.swift in Sources */,
+				C24C1CD92B16D70A0039DE16 /* RecievedNotificationCell.swift in Sources */,
+				C24C1CDA2B16D70A0039DE16 /* EventViewController.swift in Sources */,
 				C281CAD6221D6497003362FE /* InputParameterView.swift in Sources */,
 				C2161F48236191B000F686E2 /* RecieveViewController.swift in Sources */,
 				C281CAB2221D60C2003362FE /* ViewController.swift in Sources */,
@@ -590,10 +596,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -602,6 +610,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development NCE Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -614,10 +623,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationContent/NotificationContent.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -626,6 +637,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app.NotificationContent;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development NCE Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -638,10 +650,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -650,6 +664,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development NSE Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -662,10 +677,12 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = NotificationService/NotificationService.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -674,6 +691,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app.NotificationService;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development NSE Profile";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -806,17 +824,21 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RichFlyerApp/RichFlyerApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "-DAPNS_SANDBOX";
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -830,10 +852,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = RichFlyerApp/RichFlyerApp.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Q8NA27XCC2;
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -841,6 +865,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = net.richflyer.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "RichFlyer App Development Profile";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

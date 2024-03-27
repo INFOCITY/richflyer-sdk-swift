@@ -20,6 +20,7 @@ class InputParameterView: UIView {
 	var textField: UITextField = UITextField()
 	var pickerView: UIPickerView = UIPickerView()
 	var underBar = UIView()
+  var datePicker = UIDatePicker();
 	
 	var list: Array<Any>?
 	
@@ -32,27 +33,46 @@ class InputParameterView: UIView {
 		
 		self.addSubview(contentView)
 
-		titleLabel.text = type?.rawValue
+		titleLabel.text = type?.getName()
 		titleLabel.textColor = UIColor.white
 		contentView.addSubview(titleLabel)
 
-		pickerView.delegate = self
-		pickerView.dataSource = self
-		pickerView.showsSelectionIndicator = true
+		var isDate = false
+		if let list = list {
+			let typeValue = list[0]
+			if typeValue is Date {
+				isDate = true
+			}
+		}
 		
+    if (isDate) {
+      if #available(iOS 14.0, *) {
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.datePickerMode = .date
+        datePicker.addTarget(self, action: #selector(selectedDate(sender:)), for: .valueChanged)
+      }
+    } else {
+      pickerView.delegate = self
+      pickerView.dataSource = self
+      pickerView.showsSelectionIndicator = true
+    }
+    
 		let toolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: 0, height: 35))
 		let doneItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(done))
 		toolbar.setItems([doneItem], animated: true)
 		
-        let value = list?[0]
-        if value is String {
-            self.textField.text = (value as! String)
-        } else if value is Int {
-            self.textField.text = String((value as! Int))
-        }
+    if let value = list?[0] {
+			if (isDate) {
+				let dateFormatter = DateFormatter()
+				dateFormatter.dateFormat  = "yyyy/MM/dd";
+				self.textField.text = dateFormatter.string(from: value as! Date)
+			} else {
+				self.textField.text = String(describing: value)
+			}
+    }
 		textField.textColor = UIColor.white
 		textField.textAlignment = .center
-		textField.inputView = pickerView
+    textField.inputView = (isDate ? datePicker : pickerView)
 		textField.inputAccessoryView = toolbar
 		contentView.addSubview(textField)
 		
@@ -70,6 +90,16 @@ class InputParameterView: UIView {
 	@objc func done() {
 		self.textField.endEditing(true)
 	}
+  
+  
+  @objc func selectedDate(sender:UIDatePicker) {
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat  = "yyyy/MM/dd";
+    textField.text = dateFormatter.string(from: sender.date)
+    if let type = type {
+      model?.setValue(key: type, value: sender.date)
+    }
+  }
 	
 }
 
@@ -84,24 +114,17 @@ extension InputParameterView: UIPickerViewDelegate, UIPickerViewDataSource {
 	}
 
 	func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        let value = list?[row]
-        if value is String {
-            return (value as! String)
-        } else if value is Int {
-            return String((value as! Int))
-        }
+    if let value = list?[row] {
+      return String(describing: value)
+    }
 
-		return ""
+		return String(describing: "")
 	}
 	
 	func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let value = list?[row]
-        if value is String {
-            self.textField.text = (value as! String)
-        } else if value is Int {
-            self.textField.text = String((value as! Int))
-        }
-
+    if let value = list?[row] {
+      self.textField.text = String(describing: value)
+    }
 		if let type = type, let value = list?[row] {
 			model?.setValue(key: type, value: value)
 		}
