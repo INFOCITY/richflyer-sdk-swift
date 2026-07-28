@@ -12,6 +12,7 @@
 		C24C1CCB2B16CEF90039DE16 /* RecievedNotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C24C1CC82B16CEF90039DE16 /* RecievedNotificationCell.swift */; };
 		C24C1CCC2B16CEF90039DE16 /* RecievedNotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C24C1CC92B16CEF90039DE16 /* RecievedNotificationCell.xib */; };
 		C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA6F221D2CD3003362FE /* AppDelegate.swift */; };
+		A1B2C3D401A24B9EA14C7A10 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D501A24B9EA14C7A11 /* SceneDelegate.swift */; };
 		C281CA72221D2CD3003362FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C281CA71221D2CD3003362FE /* ViewController.swift */; };
 		C281CA77221D2CD4003362FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C281CA76221D2CD4003362FE /* Assets.xcassets */; };
 		C281CA7A221D2CD4003362FE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C281CA78221D2CD4003362FE /* LaunchScreen.storyboard */; };
@@ -72,6 +73,7 @@
 		C24C1CC92B16CEF90039DE16 /* RecievedNotificationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RecievedNotificationCell.xib; sourceTree = "<group>"; };
 		C281CA6C221D2CD3003362FE /* RichFlyerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichFlyerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C281CA6F221D2CD3003362FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A1B2C3D501A24B9EA14C7A11 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		C281CA71221D2CD3003362FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C281CA74221D2CD3003362FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C281CA76221D2CD4003362FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 				C281CA71221D2CD3003362FE /* ViewController.swift */,
 				C281CA98221D5530003362FE /* Model.swift */,
 				C281CA6F221D2CD3003362FE /* AppDelegate.swift */,
+				A1B2C3D501A24B9EA14C7A11 /* SceneDelegate.swift */,
 				C281CA87221D552F003362FE /* Base.lproj */,
 				C281CA91221D552F003362FE /* ja.lproj */,
 				C281CA8E221D552F003362FE /* Swift-Bridging-Header.h */,
@@ -408,6 +411,7 @@
 				C281CA9B221D5530003362FE /* InputParameterView.swift in Sources */,
 				C20E057323606E8000F84CAE /* RecieveViewController.swift in Sources */,
 				C281CA70221D2CD3003362FE /* AppDelegate.swift in Sources */,
+				A1B2C3D401A24B9EA14C7A10 /* SceneDelegate.swift in Sources */,
 				C281CA72221D2CD3003362FE /* ViewController.swift in Sources */,
 				C24C1CCA2B16CEF90039DE16 /* EventViewController.swift in Sources */,
 			);
@@ -636,7 +640,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -664,7 +668,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = RichFlyerApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -689,7 +693,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -716,7 +720,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationContent/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -742,7 +746,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -767,7 +771,7 @@
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = NotificationService/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

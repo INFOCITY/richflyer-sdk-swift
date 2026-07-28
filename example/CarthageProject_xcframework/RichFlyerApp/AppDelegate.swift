@@ -55,23 +55,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		#endif
 	}
   
-	func applicationWillResignActive(_ application: UIApplication) {
-	}
-	
-	func applicationDidEnterBackground(_ application: UIApplication) {
-		RFLastNotificationInfo.reset()
-	}
-	
-	func applicationWillEnterForeground(_ application: UIApplication) {
-	}
-	
-	func applicationDidBecomeActive(_ application: UIApplication) {
-		RFApp.resetBadgeNumber(application: application)
-	}
-	
 	func applicationWillTerminate(_ application: UIApplication) {
 	}
-    
+
+	func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+		return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+	}
+
+	func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+	}
+
     private func setServiceKey() {
         
         guard let infoPlist = Bundle.main.infoDictionary else {
