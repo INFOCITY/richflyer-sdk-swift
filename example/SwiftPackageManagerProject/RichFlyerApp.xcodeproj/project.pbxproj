@@ -498,7 +498,7 @@
 			repositoryURL = "https://github.com/INFOCITY/richflyer-sdk-swift";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 3.7.8;
+				minimumVersion = 3.7.9;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

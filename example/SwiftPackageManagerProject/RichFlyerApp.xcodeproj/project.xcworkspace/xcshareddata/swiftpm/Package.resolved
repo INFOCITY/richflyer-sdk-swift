@@ -6,8 +6,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/INFOCITY/richflyer-sdk-swift",
       "state" : {
-        "revision" : "5734b1192af111f24515965e6868b300cbef4653",
-        "version" : "3.7.8"
+        "revision" : "8a851c06512fdfb02244fd36363df540da12c48a",
+        "version" : "3.7.9"
       }
     }
   ],
