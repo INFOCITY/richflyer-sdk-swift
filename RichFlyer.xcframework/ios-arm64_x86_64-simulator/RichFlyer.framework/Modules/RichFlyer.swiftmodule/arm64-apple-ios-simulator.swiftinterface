@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RichFlyer
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-compiler-version: Apple Swift version 6.3.2 effective-5.10 (swiftlang-6.3.2.1.108 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name RichFlyer
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.2
 import AVFoundation
 import CoreHaptics
 import DeveloperToolsSupport
@@ -40,16 +40,10 @@ public struct RFResult {
   public static func registSegments(intSegments: [Swift.String : Swift.Int], completion: @escaping (_ result: RichFlyer.RFResult) -> Swift.Void)
   public static func registSegments(boolSegments: [Swift.String : Swift.Bool], completion: @escaping (_ result: RichFlyer.RFResult) -> Swift.Void)
   public static func registSegments(stringSegments: [Swift.String : Swift.String], intSegments: [Swift.String : Swift.Int], boolSegments: [Swift.String : Swift.Bool], dateSegments: [Swift.String : Foundation.Date], completion: @escaping (_ result: RichFlyer.RFResult) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getSegments() -> [Swift.String : Swift.String]?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func setLaunchMode(modes: [RichFlyer.RFContentType]?)
-  #endif
   public static func isRichFlyerNotification(userInfo: [Swift.AnyHashable : Any]) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func postMessage(events: [Swift.String]?, variables: [Swift.String : Swift.String]?, standbyTime: Foundation.NSNumber?, completion: @escaping (_ result: RichFlyer.RFResult, _ eventPostIds: [Swift.String]?) -> Swift.Void)
-  #endif
   public static func cancelPosting(_ eventPostId: Swift.String, completion: @escaping (_ result: RichFlyer.RFResult) -> Swift.Void)
   @objc deinit
 }
@@ -71,15 +65,9 @@ extension RichFlyer.RFApp {
 extension RichFlyer.RFApp {
   public static func setRFNotficationDelegate(delegate: any RichFlyer.RFNotificationDelegate)
   public static func willPresentNotification(options: UserNotifications.UNNotificationPresentationOptions, completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func didReceiveNotification(response: UserNotifications.UNNotificationResponse, handler: ((RichFlyer.RFAction?, Swift.String?) -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getReceivedData() -> Swift.Array<RichFlyer.RFContent>?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getLatestReceivedData() -> RichFlyer.RFContent?
-  #endif
 }
 @_hasMissingDesignatedInitializers public class RFLogEventsUtil {
   @objc deinit
@@ -96,12 +84,8 @@ extension RichFlyer.RFApp {
   @_Concurrency.MainActor @preconcurrency @objc public var mediaPlayPauseButtonTintColor: UIKit.UIColor
   @_Concurrency.MainActor @preconcurrency @objc public func mediaPlay()
   @_Concurrency.MainActor @preconcurrency @objc public func mediaPause()
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public enum RFContentType {
@@ -155,9 +139,7 @@ public enum RFAlertActionStyle : Swift.Int {
   case `default`
   case cancel
   case destructive
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -165,20 +147,14 @@ public enum RFAlertActionStyle : Swift.Int {
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency public class RFAlertController : UIKit.UIViewController {
   @_Concurrency.MainActor @preconcurrency public static let CLALERTVIEW_WIDTH: CoreFoundation.CGFloat
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency convenience public init(application: UIKit.UIApplication, title: Swift.String?, message: Swift.String?)
-  #endif
   @_Concurrency.MainActor @preconcurrency public func addView(view: UIKit.UIView) -> RichFlyer.RFAlertController
   @_Concurrency.MainActor @preconcurrency public func addImage(imageName: Swift.String) -> RichFlyer.RFAlertController
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public func viewDidLoad()
   @_Concurrency.MainActor @preconcurrency public func present(parent: UIKit.UIViewController, completeHandler: @escaping () -> Swift.Void)
   @_Concurrency.MainActor @preconcurrency public func present(completeHandler: @escaping () -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 public protocol RFNotificationDelegate {
@@ -186,38 +162,28 @@ public protocol RFNotificationDelegate {
   func willPresentNotification(_ center: UserNotifications.UNUserNotificationCenter, willPresent notification: UserNotifications.UNNotification, withCompletionHandler completionHandler: @escaping (UserNotifications.UNNotificationPresentationOptions) -> Swift.Void)
   @available(iOS 10.0, *)
   func didReceiveNotification(_ center: UserNotifications.UNUserNotificationCenter, didReceive response: UserNotifications.UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   @available(iOS 10.0, *)
   func dismissedContentDisplay(_ action: RichFlyer.RFAction?, content: RichFlyer.RFContent?)
-  #endif
 }
 public class RFContentDisplay {
   public init()
   public init(content: RichFlyer.RFContent)
   public func setContent(content: RichFlyer.RFContent)
   public func setButtonColor(color: UIKit.UIColor)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func present(parent: UIKit.UIViewController, completeHandler: ((RichFlyer.RFAction) -> ())?)
-  #endif
   public func dismiss()
   @objc deinit
 }
-#if compiler(>=5.3) && $NonescapableTypes
 extension Swift.Optional {
   public mutating func ensure(_ f: () throws -> Wrapped) rethrows -> Wrapped
 }
-#endif
 @_hasMissingDesignatedInitializers public class RFLastNotificationInfo {
-  #if compiler(>=5.3) && $NonescapableTypes
   public static var identifier: Swift.String? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static var eventId: Swift.String? {
     get
   }
-  #endif
   public static var title: Swift.String? {
     get
   }
@@ -226,12 +192,8 @@ extension Swift.Optional {
   }
   public static func reset()
   public static func saveLastNotificationId(content: UserNotifications.UNNotificationContent, appGroup: Swift.String)
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadLastNotificationId(appGroup: Swift.String) -> Swift.String?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func loadLastEventId(appGroup: Swift.String) -> Swift.String?
-  #endif
   @objc deinit
 }
 public struct RFAction {

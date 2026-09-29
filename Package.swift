@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "RichFlyer",
-            url: "https://github.com/INFOCITY/richflyer-sdk-swift/releases/download/3.7.8/RichFlyer.xcframework.zip",
-            checksum: "e9e330b9c39091e3cf59a4fd34379cc23781b5ba1f78f701eea9829683ba6010"
+            url: "https://github.com/INFOCITY/richflyer-sdk-swift/releases/download/3.7.9/RichFlyer.xcframework.zip",
+            checksum: "92fb4791debfffb0b4818aa142bb5cea503c5849971cc2a3016988438f021fda"
         )
     ]
 )

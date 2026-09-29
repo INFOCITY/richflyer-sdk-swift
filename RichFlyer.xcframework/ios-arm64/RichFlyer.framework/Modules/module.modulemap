@@ -7,5 +7,4 @@ framework module RichFlyer {
 
 module RichFlyer.Swift {
   header "RichFlyer-Swift.h"
-  requires objc
 }
